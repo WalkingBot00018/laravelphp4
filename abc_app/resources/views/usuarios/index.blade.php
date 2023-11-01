@@ -17,6 +17,7 @@
                 <td>
                     <a href="{{ route('usuarios.mostrar', $usuario->id) }}">Ver</a>
                     <a href="{{ route('usuarios.editar', $usuario->id) }}">Editar</a>
+                    <a href="{{ route('usuarios.destroy', $usuario->id) }}">eliminar</a>
                 </td>
             </tr>
         @endforeach

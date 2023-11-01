@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Crear Nueva Habitación</h1>
 <form method="POST" action="{{ route('habitacion.store') }}">
     @csrf

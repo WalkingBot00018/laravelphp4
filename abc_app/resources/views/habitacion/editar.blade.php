@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Editar Habitación</h1>
 <form method="POST" action="{{ route('habitacion.update', $habitacion->nro_habitacion) }}">
     @csrf

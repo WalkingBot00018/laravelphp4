@@ -16,3 +16,5 @@
     <button type="submit">Actualizar</button>
 </form>
 <a href="{{ route('usuarios.mostrar', $usuario->id) }}">Ver Detalles</a>
+
+

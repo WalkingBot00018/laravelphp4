@@ -17,8 +17,9 @@ use App\Http\Controllers\UsuariosController;
 
 Route::get('/', function () {
     return view('welcome');
-    
-
+});
+Route::get('/app', function () {
+    return view('layouts/app');
 });
 Route::get('/servicios', [ServiciosController::class, 'index'])->name('servicios.index');
 Route::get('/servicios/crear', [ServiciosController::class, 'create'])->name('servicios.crear');

@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Listado de Habitaciones</h1>
 <table>
     <thead>
