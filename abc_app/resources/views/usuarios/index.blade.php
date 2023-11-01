@@ -1,4 +1,5 @@
 <h1>Listado de Usuarios</h1>
+<link rel="stylesheet" href="{{ asset('css/index.css') }}"> 
 <table>
     <thead>
         <tr>
@@ -17,10 +18,15 @@
                 <td>
                     <a href="{{ route('usuarios.mostrar', $usuario->id) }}">Ver</a>
                     <a href="{{ route('usuarios.editar', $usuario->id) }}">Editar</a>
-                    <a href="{{ route('usuarios.destroy', $usuario->id) }}">eliminar</a>
+                    {{-- <a href="{{ route('usuarios.destroy', $usuario->id) }}">eliminar</a> --}}
+                    <form method="POST" action="{{ route('usuarios.destroy', $usuario->id) }}">
+                        @csrf
+                        @method('DELETE')
+                        <input type="submit" class="btn btn-danger btn-sm" value="Eliminar">
+                    </form>
                 </td>
             </tr>
         @endforeach
     </tbody>
 </table>
-<a href="{{ route('usuarios.crear') }}">Crear Usuario</a>
+<a href="{{ route('usuarios.crear') }}" class="q">Crear Usuario</a>

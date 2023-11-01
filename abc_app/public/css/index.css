@@ -1,0 +1,27 @@
+*{
+    font-family: sans-serif;
+    
+}
+body{
+    background-color: gray;
+}
+h1{
+    color: aliceblue;
+   
+}
+
+table{
+    background-color: rgb(251, 253, 252);
+    height: 20%;
+    box-shadow: 1px 5px 10px 10px black;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+a{
+    background-color: rgb(42, 42, 44);
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 6px;
+    text-decoration: dashed;
+}
